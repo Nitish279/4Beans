@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>4Beans Café – Italian-Inspired Menu</title>
+    <style>
+        /* ---------- GENERAL STYLING ---------- */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background: #fefcf8;
+            /* subtle off-white background */
+            color: #4b2e18;
+            /* coffee-brown text */
+            line-height: 1.5;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        /* ---------- HEADER / LOGO AREA ---------- */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header img {
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 2.5em;
+            margin: 0;
+            color: #4b2e18;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            margin-top: 5px;
+            color: #7a4f38;
+            /* slightly lighter coffee color */
+        }
+
+        /* ---------- SECTION HEADERS ---------- */
+        h2 {
+            margin-top: 40px;
+            font-family: "Times New Roman", Times, serif;
+            text-transform: uppercase;
+            border-bottom: 1px solid #e2dacd;
+            padding-bottom: 5px;
+            font-weight: normal;
+            color: #4b2e18;
+        }
+
+        /* ---------- TABLE STYLES ---------- */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px 10px;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #f4f0ea;
+            font-weight: bold;
+            border-bottom: 2px solid #e2dacd;
+        }
+
+        tr:nth-child(even) {
+            background-color: #faf9f7;
+        }
+
+        /* ---------- FOOTER / NOTE ---------- */
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Make tables responsive on smaller screens */
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            table,
+            th,
+            td {
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- LOGO & TITLE -->
+        <div class="header">
+            <img src="4beans_logo.jpeg" alt="4Beans Cafe Logo">
+        </div>
+
+        <!-- INTRO / TAGLINE -->
+        <p style="font-size:1.1em;">
+            <em>Benvenuto!</em> Experience the warmth and elegance of Italy with our carefully curated menu,
+            featuring artisanal coffee and refreshing beverages.
+        </p>
+
+        <!-- HOT COFFEES -->
+        <h2>Caffè Caldi (Hot Coffees)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 50%;">Item</th>
+                    <th style="width: 20%;">Price (INR)</th>
+                    <th style="width: 30%;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Espresso (30 ml)</td>
+                    <td>₹90</td>
+                    <td>A bold single shot of our house blend.</td>
+                </tr>
+                <tr>
+                    <td>Double Espresso (60 ml)</td>
+                    <td>₹110</td>
+                    <td>Extra-strong double shot for coffee aficionados.</td>
+                </tr>
+                <tr>
+                    <td>Americano</td>
+                    <td>₹130</td>
+                    <td>Smooth espresso topped with hot water.</td>
+                </tr>
+                <tr>
+                    <td>Cappuccino</td>
+                    <td>₹150</td>
+                    <td>Espresso, steamed milk, and a velvety foam, the Italian classic.</td>
+                </tr>
+                <tr>
+                    <td>Latte</td>
+                    <td>₹160</td>
+                    <td>Espresso and creamy steamed milk; perfect harmony.</td>
+                </tr>
+                <tr>
+                    <td>Mocha</td>
+                    <td>₹170</td>
+                    <td>Luxurious blend of espresso and rich Italian chocolate.</td>
+                </tr>
+                <tr>
+                    <td>Flat White</td>
+                    <td>₹150</td>
+                    <td>Velvety microfoam over a bold double shot.</td>
+                </tr>
+                <tr>
+                    <td>Cortado</td>
+                    <td>₹140</td>
+                    <td>Equal parts espresso and steamed milk.</td>
+                </tr>
+                <tr>
+                    <td>Macchiato</td>
+                    <td>₹120</td>
+                    <td>Espresso ‘stained’ with a delicate dollop of foam.</td>
+                </tr>
+                <tr>
+                    <td>Con Panna</td>
+                    <td>₹130</td>
+                    <td>Espresso topped with fresh whipped cream.</td>
+                </tr>
+                <tr>
+                    <td>Affogato</td>
+                    <td>₹180</td>
+                    <td>Espresso poured over gelato, a true Italian indulgence.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- ICED / COLD COFFEES -->
+        <h2>Caffè Freddi (Iced / Cold Coffees)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 50%;">Item</th>
+                    <th style="width: 20%;">Price (INR)</th>
+                    <th style="width: 30%;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Iced Latte</td>
+                    <td>₹160</td>
+                    <td>Chilled espresso and milk over ice, l’Italiano rinfrescante.</td>
+                </tr>
+                <tr>
+                    <td>Iced Americano</td>
+                    <td>₹130</td>
+                    <td>Bold espresso mixed with cold water, served over ice.</td>
+                </tr>
+                <tr>
+                    <td>Cold Brew</td>
+                    <td>₹180</td>
+                    <td>Slow-steeped for a naturally smooth sweetness.</td>
+                </tr>
+                <tr>
+                    <td>Frappe</td>
+                    <td>₹190</td>
+                    <td>Blended coffee, milk, and ice—frothy and indulgent.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- SIGNATURE COFFEES -->
+        <h2>Specialità della Casa (Signature Coffees)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 50%;">Item</th>
+                    <th style="width: 20%;">Price (INR)</th>
+                    <th style="width: 30%;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Irish Coffee</td>
+                    <td>₹220</td>
+                    <td>Hot coffee, a touch of Irish cream, finished with whipped cream.</td>
+                </tr>
+                <tr>
+                    <td>Vietnamese Coffee</td>
+                    <td>₹180</td>
+                    <td>Strong brew sweetened with condensed milk.</td>
+                </tr>
+                <tr>
+                    <td>Filter Coffee</td>
+                    <td>₹100</td>
+                    <td>Traditional South Indian filter decoction with an Italian flair.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- NON-COFFEE -->
+        <h2>Bevande Senza Caffè (Non-Coffee)</h2>
+        <h3 style="margin-top: 20px;">Caldi (Hot)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 50%;">Item</th>
+                    <th style="width: 20%;">Price (INR)</th>
+                    <th style="width: 30%;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hot Chocolate</td>
+                    <td>₹160</td>
+                    <td>Steamed milk & premium cocoa.</td>
+                </tr>
+                <tr>
+                    <td>White Chocolate</td>
+                    <td>₹200</td>
+                    <td>Creamy white cocoa; add marshmallows or brownie crumble.</td>
+                </tr>
+                <tr>
+                    <td>Chai Latte</td>
+                    <td>₹130</td>
+                    <td>Spiced tea concentrate with frothy milk.</td>
+                </tr>
+                <tr>
+                    <td>Matcha</td>
+                    <td>₹60</td>
+                    <td>Vibrant green tea whisked with hot water or milk.</td>
+                </tr>
+                <tr>
+                    <td>Pure Green Tea</td>
+                    <td>₹80</td>
+                    <td>Clean and refreshing green tea.</td>
+                </tr>
+                <tr>
+                    <td>Kashmiri Kahwa</td>
+                    <td>₹90</td>
+                    <td>Delicate saffron, cinnamon, and cardamom flavors.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 style="margin-top: 20px;">Freddi (Cold)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 50%;">Item</th>
+                    <th style="width: 20%;">Price (INR)</th>
+                    <th style="width: 30%;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Iced Tea (Peach / Lemon)</td>
+                    <td>₹140</td>
+                    <td>Chilled tea base with a fruity twist.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- PERSONALIZATIONS -->
+        <h2>Personalizza la Tua Bevanda (Personalize)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 40%;">Option</th>
+                    <th style="width: 20%;">Upcharge</th>
+                    <th style="width: 40%;">Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Choice of Bean<br><small>(House / Single Origin / Decaf)</small></td>
+                    <td>+₹20 (premium)</td>
+                    <td>Select a premium roast to refine your coffee flavor.</td>
+                </tr>
+                <tr>
+                    <td>Milk Alternatives<br><small>(Soy, Coconut, Almond)</small></td>
+                    <td>+₹60</td>
+                    <td>Dairy-free, smooth, and creamy.</td>
+                </tr>
+                <tr>
+                    <td>Flavoured Syrups<br><small>(Hazelnut, Vanilla, Irish Cream, Caramel)</small></td>
+                    <td>+₹40</td>
+                    <td>Customize your coffee’s taste.</td>
+                </tr>
+                <tr>
+                    <td>Extras – Whipped Cream / Ice Cream</td>
+                    <td>+₹40</td>
+                    <td>Add a luscious finish to any drink.</td>
+                </tr>
+                <tr>
+                    <td>Extras – Extra Espresso Shot</td>
+                    <td>+₹60</td>
+                    <td>Boost the intensity of your drink.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer">
+            <p><strong>Benvenuto a 4Beans Café</strong><br>Savor the Italian spirit in every sip! 4Beans Café is your
+                destination for refined coffee experiences and signature Italian charm. <em>Grazie</em> for visiting!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
